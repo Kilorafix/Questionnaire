@@ -11,6 +11,10 @@
 		07C7F5472919831700395400 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F5462919831700395400 /* ContentView.swift */; };
 		07C7F5492919831800395400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C7F5482919831800395400 /* Assets.xcassets */; };
 		07C7F54C2919831800395400 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C7F54B2919831800395400 /* Preview Assets.xcassets */; };
+		07C7F5532919853700395400 /* QuestionnaireExplanation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F5522919853700395400 /* QuestionnaireExplanation.swift */; };
+		07C7F5562919863800395400 /* Questionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F5552919863800395400 /* Questionnaire.swift */; };
+		07C7F5592919866700395400 /* QuestionnaireData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F5582919866700395400 /* QuestionnaireData.swift */; };
+		07C7F55B291986F400395400 /* QuestionAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7F55A291986F400395400 /* QuestionAnswerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		07C7F5462919831700395400 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		07C7F5482919831800395400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C7F54B2919831800395400 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07C7F5522919853700395400 /* QuestionnaireExplanation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireExplanation.swift; sourceTree = "<group>"; };
+		07C7F5552919863800395400 /* Questionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questionnaire.swift; sourceTree = "<group>"; };
+		07C7F5582919866700395400 /* QuestionnaireData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireData.swift; sourceTree = "<group>"; };
+		07C7F55A291986F400395400 /* QuestionAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 		07C7F5432919831700395400 /* Questionnaire */ = {
 			isa = PBXGroup;
 			children = (
+				07C7F5572919865B00395400 /* Model */,
+				07C7F5542919857D00395400 /* Views */,
 				07C7F5442919831700395400 /* QuestionnaireApp.swift */,
 				07C7F5462919831700395400 /* ContentView.swift */,
 				07C7F5482919831800395400 /* Assets.xcassets */,
@@ -65,6 +75,24 @@
 				07C7F54B2919831800395400 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07C7F5542919857D00395400 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07C7F5522919853700395400 /* QuestionnaireExplanation.swift */,
+				07C7F5552919863800395400 /* Questionnaire.swift */,
+				07C7F55A291986F400395400 /* QuestionAnswerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07C7F5572919865B00395400 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07C7F5582919866700395400 /* QuestionnaireData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C7F5592919866700395400 /* QuestionnaireData.swift in Sources */,
 				07C7F5472919831700395400 /* ContentView.swift in Sources */,
+				07C7F55B291986F400395400 /* QuestionAnswerView.swift in Sources */,
+				07C7F5562919863800395400 /* Questionnaire.swift in Sources */,
+				07C7F5532919853700395400 /* QuestionnaireExplanation.swift in Sources */,
 				07C7F5452919831700395400 /* QuestionnaireApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

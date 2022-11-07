@@ -9,13 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Text("Welcome to the app")
+                Image(systemName: "figure.wave")
+                    .font(.largeTitle)
+                    .foregroundColor(.accentColor)
+                NavigationLink {
+                    QuestionnaireExplanation()
+                } label: {
+                    HStack {
+                        Text("Let's get started!")
+                        Image(systemName: "arrow.right")
+                    }
+                }
+                
+                
+            }
+            .padding()
         }
-        .padding()
+        
     }
 }
 
