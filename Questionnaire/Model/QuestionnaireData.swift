@@ -39,6 +39,6 @@ class QuestionnaireData: ObservableObject {
         QuestionAndAnswer(question: "is altijd zichzelf", answer: 3.0),
         QuestionAndAnswer(question: "kan luisteren", answer: 0.0),
         QuestionAndAnswer(question: "gunt vrijheid", answer: 0.0),
-        QuestionAndAnswer(question: "doet moeite voor familie", answer: 0.0)
+        QuestionAndAnswer(question: "biedt steun", answer: 0.0)
     ]
 }
