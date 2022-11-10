@@ -23,8 +23,6 @@ struct ContentView: View {
                         Image(systemName: "arrow.right")
                     }
                 }
-                
-                
             }
             .padding()
         }

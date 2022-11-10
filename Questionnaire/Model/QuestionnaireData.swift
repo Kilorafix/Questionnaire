@@ -16,7 +16,7 @@ enum QuestionnaireMode {
 struct QuestionAndAnswer: Hashable {
     let id = UUID()
     var question: String = ""
-    @State var answer: Double = 0.0
+    var answer: Double = 0.0
     
     static func == (lhs: QuestionAndAnswer, rhs: QuestionAndAnswer) -> Bool {
         lhs.id.uuidString <= rhs.id.uuidString
@@ -29,7 +29,7 @@ struct QuestionAndAnswer: Hashable {
 
 class QuestionnaireData: ObservableObject {
     let operationMode: QuestionnaireMode = QuestionnaireMode.Nest
-    var questions: [QuestionAndAnswer] = [
+    @Published var questions: [QuestionAndAnswer] = [
         QuestionAndAnswer(question: "is grappig", answer: 0.0),
         QuestionAndAnswer(question: "is attent", answer: 0.0),
         QuestionAndAnswer(question: "is slim", answer: 5.0),

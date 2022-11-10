@@ -13,8 +13,8 @@ struct Questionnaire: View {
     var body: some View {
         ScrollView {
             VStack{
-                ForEach(qd.questions, id: \.id) { qa in
-                    QuestionAnswerView(question: qa.question, answerValue: qa.$answer)
+                ForEach(0..<qd.questions.count, id: \.self) { index in
+                    QuestionAnswerView(question: qd.questions[index].question, answerValue: $qd.questions[index].answer)
                         .padding()
                 }
             }
