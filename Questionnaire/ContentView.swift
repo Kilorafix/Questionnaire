@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to the app")
+                Text("Welkom in de app!")
                 Image(systemName: "figure.wave")
                     .font(.largeTitle)
                     .foregroundColor(.accentColor)
@@ -19,7 +19,7 @@ struct ContentView: View {
                     QuestionnaireExplanation()
                 } label: {
                     HStack {
-                        Text("Let's get started!")
+                        Text("Laten we beginnen!")
                         Image(systemName: "arrow.right")
                     }
                 }

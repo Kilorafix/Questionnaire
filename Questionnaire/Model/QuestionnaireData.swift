@@ -29,16 +29,28 @@ struct QuestionAndAnswer: Hashable {
 
 class QuestionnaireData: ObservableObject {
     let operationMode: QuestionnaireMode = QuestionnaireMode.Nest
-    @Published var questions: [QuestionAndAnswer] = [
-        QuestionAndAnswer(question: "is grappig", answer: 0.0),
-        QuestionAndAnswer(question: "is attent", answer: 0.0),
-        QuestionAndAnswer(question: "is slim", answer: 5.0),
-        QuestionAndAnswer(question: "is ambitieus", answer: 3.0),
-        QuestionAndAnswer(question: "emotioneel intelligent", answer: 1.0),
-        QuestionAndAnswer(question: "doet moeite voor familie", answer: 7.0),
-        QuestionAndAnswer(question: "is altijd zichzelf", answer: 3.0),
-        QuestionAndAnswer(question: "kan luisteren", answer: 0.0),
-        QuestionAndAnswer(question: "gunt vrijheid", answer: 0.0),
-        QuestionAndAnswer(question: "biedt steun", answer: 0.0)
+    @Published var tQuestions: [QuestionAndAnswer] = [
+        QuestionAndAnswer(question: "Kilian is grappig", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian is attent", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian is slim", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian is ambitieus", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian emotioneel intelligent", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian doet moeite voor familie", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian is altijd zichzelf", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian kan luisteren", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian gunt Laura vrijheid", answer: 0.0),
+        QuestionAndAnswer(question: "Kilian biedt steun", answer: 0.0)
+    ]
+    @Published var dQuestions: [QuestionAndAnswer] = [
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0),
+        QuestionAndAnswer(question: "", answer: 0.0)
     ]
 }

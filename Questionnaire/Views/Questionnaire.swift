@@ -13,10 +13,13 @@ struct Questionnaire: View {
     var body: some View {
         ScrollView {
             VStack{
-                ForEach(0..<qd.questions.count, id: \.self) { index in
-                    QuestionAnswerView(question: qd.questions[index].question, answerValue: $qd.questions[index].answer)
+                ForEach(0..<qd.tQuestions.count, id: \.self) { index in
+                    QuestionAnswerView(question: qd.tQuestions[index].question, tAnswerValue: $qd.tQuestions[index].answer, dAnswerValue: $qd.dQuestions[index].answer)
                         .padding()
                 }
+            }
+            NavigationLink("bereken de antwoorden..") {
+                LoadingView()
             }
         }
     }

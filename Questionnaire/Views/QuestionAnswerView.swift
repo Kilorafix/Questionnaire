@@ -9,15 +9,26 @@ import SwiftUI
 
 struct QuestionAnswerView: View {
     var question: String
-    @Binding var answerValue: Double
+    @Binding var tAnswerValue: Double
+    @Binding var dAnswerValue: Double
     var body: some View {
         VStack {
             Text(question).padding()
-            HStack {
-                Text("0")
-                Slider(value: $answerValue, in:0.0...10.0, step:1.0)
-                Text("\(Int(answerValue))")
+            VStack {
+                HStack {
+                    Text("T: ")
+                    Text("0")
+                    Slider(value: $tAnswerValue, in:0.0...10.0, step:1.0)
+                    Text("\(Int(tAnswerValue))")
+                }
+                HStack {
+                    Text("D: ")
+                    Text("0")
+                    Slider(value: $dAnswerValue, in:0.0...10.0, step:1.0)
+                    Text("\(Int(dAnswerValue))")
+                }
             }
+            
         }
     }
 }
@@ -25,6 +36,7 @@ struct QuestionAnswerView: View {
 struct QuestionAnswerView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionAnswerView(question: "what world is",
-                           answerValue: .constant(4.0))
+                           tAnswerValue: .constant(4.0),
+                           dAnswerValue: .constant(4.0))
     }
 }
