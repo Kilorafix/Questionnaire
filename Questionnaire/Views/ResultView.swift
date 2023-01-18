@@ -12,7 +12,7 @@ struct ResultView: View {
         ZStack{
             VStack {
                 Image(systemName: "link").font(.largeTitle).foregroundColor(Color.yellow).padding()
-                Text("Uit onze berekeningen is gebleken dat Kilian met 100% zekerheid de ideale schoonzoon is!").padding()
+                Text("Uit onze berekeningen is gebleken dat Kilian met 100% zekerheid de ideale schoonzoon en partner voor Laura is!").padding()
                 HStack {
                     Image(systemName: "info")
                     Text("PS: De informatie in deze app is bindend, bedankt voor jullie feedback en de hand van jullie dochter!").padding()
